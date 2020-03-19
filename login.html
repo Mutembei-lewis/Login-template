@@ -5,33 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap cdn link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>bBootstrap login form</title>
+    <title>Bootstrap login form</title>
+      <!-- font awesome cdn -->
+      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+      <script src="https://kit.fontawesome.com/57c80489f0.js" crossorigin="anonymous"></script>
+  
+        <!-- google fonts link -->
+        <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Raleway|Roboto|Roboto+Condensed|Roboto+Mono|Sen|Source+Sans+Pro&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <!-- link to google fonts -->
 </head>
 <body>
-<div class="container-fluid maindiv bg-success"> 
-    <div class="container mt-3   formdiv img-fluid bg-transparent border-danger rounded ">
-        <h2 class="myheading text-center pt-2" >E-LEARNING LOGIN FORM</h2>
-        <form class="bord myform ">
+<div class="container-fluid maindiv  pt-5"> 
+  
+    <div class="container   formdiv img-fluid bg-light p-3  ">
+        <h2 class="myheading text-center " >Login</h2>
+
+        <form class="bord myform  ">
             <div class="form-group">
-              <label for="exampleInputEmail1"m style="font-weight: 800;">Email address:</label>
-              <input type="email" class="form-control inputforms " id="exampleInputEmail1" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <label for="exampleInputEmail1"m style="font-weight: 200;">Username</label> <br>
+              <span><i class="fas fa-user inputicon"></i></span>
+              <input type="email" class="form-control   inputforms rounded " placeholder=" Type your username" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <hr class="lining">
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1" style="font-weight: 800;">Password:</label>
-              <input type="password" class="form-control inputforms " id="exampleInputPassword1">
+              <label for="exampleInputPassword1" style="font-weight: 200;">Password</label>
+              <br>
+              <span><i class="fas fa-unlock-alt"></i></span>
+              
+              <input type="password" class="form-control  inputforms rounded" placeholder="password" id="exampleInputPassword1" >
+              <hr class="lining">
+               <a href="#" class="reset  text-info"> Forgot password ?</a> 
             </div>
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <br>
+            
+            <button type="submit" class="btn btn-block  mt-5 submition ">LOGIN</button> 
+            <div class="container  m-lg-3 p-lg-3"> 
+             <p class="text-center text-dark"> Or signup using  <br>
+              <i class="fab fa-2x pt-2 social social1 fa-facebook-f m-lg-3"></i>
+              <i class="fab  fa-2x pt-2 social social2 fa-instagram m-lg-3"></i>
+              <i class="fab fa-2x  pt-2  social  social3 fa-google m-lg-3"></i>
+              </p>
+
             </div>
-            <button type="submit" class="btn btn-primary submition">Submit</button> 
-            <div class="">
-                    <a href="" class="redirectlink"> Not registered ? Sign  up  </a>
-            </div>
+            <p> You dont have an account ? <a href="" class="text-center">  Register Here</a></p>
+           
           </form>
+
     </div>
 
 </div>
